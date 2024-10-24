@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00f0d4;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('shii.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #00f0d4;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #007b63;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #444;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+/* Styles for the room images */
+.room-list {
+    display: flex;
+    gap: 20px;
+}
+
+.room {
+    text-align: center;
+}
+
+.room img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.room a:hover {
+    color: #007b63;
+}
+
+.room img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
